@@ -21,7 +21,7 @@ server.use(express.static(path.join(__dirname,'../public')));
 server.use(mainRoutes);
 
 server.use((req,res)=>{
-    res.status(404).send('NÃO ACHOU');
+    res.render('pages/404');
 })
 
 
